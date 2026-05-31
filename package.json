@@ -12,7 +12,10 @@
     "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
-    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "data:export": "npm run strapi export -- --format dir --no-encrypt -f backup",
+    "data:import": "npm run strapi import -- -f ./backup",
+    "setup": "npm run data:import && npm run dev"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.47.0",
