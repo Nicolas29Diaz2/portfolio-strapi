@@ -32,6 +32,10 @@
 {"kind":"relation.morph","relation":"morphToMany","left":{"type":"plugin::upload.file","field":"related","ref":22},"right":{"ref":15,"pos":1,"type":"api::project.project","field":"thumbnail"}}
 {"kind":"relation.morph","relation":"morphToMany","left":{"type":"plugin::upload.file","field":"related","ref":20},"right":{"ref":16,"pos":1,"type":"api::project.project","field":"thumbnail"}}
 {"kind":"relation.morph","relation":"morphToMany","left":{"type":"plugin::upload.file","field":"related","ref":20},"right":{"ref":17,"pos":1,"type":"api::project.project","field":"thumbnail"}}
+{"kind":"relation.morph","relation":"morphToMany","left":{"type":"plugin::upload.file","field":"related","ref":25},"right":{"ref":1,"pos":1,"type":"api::product.product","field":"banner"}}
+{"kind":"relation.morph","relation":"morphToMany","left":{"type":"plugin::upload.file","field":"related","ref":27},"right":{"ref":1,"pos":1,"type":"api::product.product","field":"bannerMobile"}}
+{"kind":"relation.morph","relation":"morphToMany","left":{"type":"plugin::upload.file","field":"related","ref":25},"right":{"ref":6,"pos":1,"type":"api::product.product","field":"banner"}}
+{"kind":"relation.morph","relation":"morphToMany","left":{"type":"plugin::upload.file","field":"related","ref":27},"right":{"ref":6,"pos":1,"type":"api::product.product","field":"bannerMobile"}}
 {"kind":"relation.basic","relation":"manyToOne","left":{"type":"plugin::upload.file","field":"folder","ref":7},"right":{"type":"plugin::upload.folder","field":"files","ref":1,"pos":1}}
 {"kind":"relation.basic","relation":"manyToOne","left":{"type":"plugin::upload.file","field":"folder","ref":8},"right":{"type":"plugin::upload.folder","field":"files","ref":1,"pos":2}}
 {"kind":"relation.basic","relation":"manyToOne","left":{"type":"plugin::upload.file","field":"folder","ref":9},"right":{"type":"plugin::upload.folder","field":"files","ref":1,"pos":3}}
@@ -49,6 +53,7 @@
 {"kind":"relation.basic","relation":"manyToOne","left":{"type":"plugin::upload.file","field":"folder","ref":21},"right":{"type":"plugin::upload.folder","field":"files","ref":2,"pos":2}}
 {"kind":"relation.basic","relation":"manyToOne","left":{"type":"plugin::upload.file","field":"folder","ref":22},"right":{"type":"plugin::upload.folder","field":"files","ref":2,"pos":3}}
 {"kind":"relation.basic","relation":"manyToOne","left":{"type":"plugin::upload.file","field":"folder","ref":23},"right":{"type":"plugin::upload.folder","field":"files","ref":2,"pos":4}}
+{"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":25,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"a6c32zz5ccxfbfkzy6nuxgp4"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":15,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"adj11qybxn0h2yqhqf77u9gg"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":21,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"bo22ymyr83spcv9hg8mxeb7b"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":9,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"g1555i9owvfsyozikxy8ih9t"}}
@@ -56,6 +61,7 @@
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":16,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"i1xul7h1u8xlwlmead0t7na6"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":10,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"k8l2tc0wpeooc2s714lmm6at"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":17,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"l49tbft8e4rxktvdol7xe69e"}}
+{"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":27,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"lvpc9y0f6fpauy0zr4oahzvh"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":19,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"mt5rvhhel5dgfz5jjawtizxf"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":14,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"nnyrwl9ip8lqc5ejvnp67l6u"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"plugin::upload.file","ref":11,"field":"localizations"},"right":{"type":"plugin::upload.file","ref":"oiax1ibezk6a948rzrjv2rrc"}}
@@ -98,6 +104,8 @@
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"api::about.about","ref":9,"field":"localizations"},"right":{"type":"api::about.about","ref":"js4kobuwf5lugvhnnu4n8i4u"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"api::contact.contact","ref":3,"field":"localizations"},"right":{"type":"api::contact.contact","ref":"qhcgolqdmf7nr2ffa7lti9oi"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"api::contact.contact","ref":4,"field":"localizations"},"right":{"type":"api::contact.contact","ref":"qhcgolqdmf7nr2ffa7lti9oi"}}
+{"kind":"relation.circular","relation":"oneToMany","left":{"type":"api::product.product","ref":1,"field":"localizations"},"right":{"type":"api::product.product","ref":"g91p01zo46waz1jbhgz2rjcl"}}
+{"kind":"relation.circular","relation":"oneToMany","left":{"type":"api::product.product","ref":6,"field":"localizations"},"right":{"type":"api::product.product","ref":"g91p01zo46waz1jbhgz2rjcl"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"api::project.project","ref":14,"field":"localizations"},"right":{"type":"api::project.project","ref":"eql8a44m0bybmrkejfxibs81"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"api::project.project","ref":15,"field":"localizations"},"right":{"type":"api::project.project","ref":"eql8a44m0bybmrkejfxibs81"}}
 {"kind":"relation.circular","relation":"oneToMany","left":{"type":"api::project.project","ref":10,"field":"localizations"},"right":{"type":"api::project.project","ref":"kkyf2ro1ob7w26a5pym9lfzw"}}

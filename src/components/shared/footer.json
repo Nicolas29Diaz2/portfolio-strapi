@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "linkItem": {
+      "type": "component",
+      "component": "shared.link-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
