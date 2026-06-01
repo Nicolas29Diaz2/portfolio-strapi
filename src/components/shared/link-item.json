@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_link_items",
+  "info": {
+    "displayName": "linkItem",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
