@@ -1,61 +1,41 @@
-# 🚀 Getting started with Strapi
+# 3D Portfolio CMS
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+A Strapi backend for managing the 3D portfolio content modules: projects, skills, about, and products.
 
-### `develop`
+## 🚀 Quick Start / Setup
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
-
+```bash
+git clone <repo-url>
+cd portfolio-strapi
+npm install
+npm run data:import
 ```
+
+> **Warning:** You MUST run `npm run data:import` to seed the preloaded data and content into the CMS before starting the server.
+
+```bash
 npm run develop
-# or
-yarn develop
 ```
 
-### `start`
+## 📂 Content Structure (Content Types)
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+| Type | Name | Purpose |
+| --- | --- | --- |
+| Collection Type | `projects` | Stores portfolio items and 3D project entries. |
+| Collection Type | `skills` | Stores skill records and expertise details. |
+| Single Type | `about` | Stores the About Me section content. |
+| Collection Type | `products` | Stores product-related content and listings. |
 
-```
-npm run start
-# or
-yarn start
-```
+## 🛠️ Available Scripts
 
-### `build`
+- `npm run develop` — Start Strapi in development mode with auto-reload.
+- `npm run start` — Start Strapi in production-like mode.
+- `npm run build` — Build the Strapi admin panel.
+- `npm run data:export` — Export CMS data to the local `backup` directory.
+- `npm run data:import` — Import the seeded data and content into the CMS.
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+## 🔒 Development Notes (Database & Storage)
 
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+- Local development uses SQLite stored at `.tmp/data.db`.
+- Uploaded media and assets are stored in `public/uploads/`.
+- For external connections, copy the API key from the API Tokens configuration and use a `Read Only` token.
